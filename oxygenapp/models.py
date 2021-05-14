@@ -24,6 +24,6 @@ class Post(models.Model):
         ordering = ['-created_on']
 
     # this method is the default human-readable representation of the object. Django will use it in many places
-    # such as the admin panel
+    # Ex: As the admin panel
     def __str__(self):
         return self.title
